@@ -1,5 +1,6 @@
 name: "snyk code test per cx but aiming to fail with linux"
 ## works with actions/checkout@v3 and snyk/actions/node@master
+## works with actions/checkout@v2 and snyk/actions/node@master
 
 on: [push, pull_request]
 jobs:
@@ -8,13 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-       # uses: actions/checkout@v3 
-        uses: actions/checkout@v2 
+        uses: actions/checkout@v3 
+       # uses: actions/checkout@v2 
         with: 
           fetch-depth: 0
         
       - name: Run snyk to check for vulns TEST
-        uses: snyk/actions/node@master
+     #   uses: snyk/actions/node@master
+        uses: snyk/actions/setup@master
         continue-on-error: true
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
