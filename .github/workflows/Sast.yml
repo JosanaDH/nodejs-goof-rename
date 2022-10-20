@@ -1,0 +1,17 @@
+sast:
+  name: Snyk Code Scan
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      with: 
+        fetch-depth: 0
+        
+    - name: Run snyk to check for vulns
+      uses: snyk/actions/node@master
+      continue-on-error: true
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        command: code test
+       
