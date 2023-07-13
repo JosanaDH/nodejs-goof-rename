@@ -11,4 +11,4 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           command: monitor
-          args: --strict-out-of-sync=false
+          args: --strict-out-of-sync=false --remote-repo-url="https://github.com/JosanaDH/nodejs-goof"
