@@ -15,9 +15,9 @@
     "test": "snyk test"
   },
   "dependencies": {
-    "babel-traverse":"7.0.0-beta.3", //should be a direct critical
-    "json5":"2.2.1", //should be a direct medium
-    "kind-of":"6.0.2", //should be a direct low
+    "babel-traverse":"7.0.0-beta.3", 
+    "json5":"2.2.1", 
+    "kind-of":"6.0.2", 
     "ember-cli-babel":"7.26.11",
     "ember-debug-logger":"2.1.1",
     "adm-zip": "0.4.10",
