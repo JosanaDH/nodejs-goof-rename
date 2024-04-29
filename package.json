@@ -15,7 +15,7 @@
     "test": "snyk test"
   },
   "dependencies": {
-    "ember-cli-babel":"7.26.11",
+    "ember-cli-babel":"8.0.0",
     "ember-debug-logger":"2.1.1",
     "adm-zip": "0.4.10",
     "body-parser": "1.9.0",
