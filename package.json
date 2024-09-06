@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "tinymce":"4.2.3",
-    "elliptic": "6.4.1",
+    "elliptic": "6.5.7",
     "yallist":"4.0.0",
-    "hfs":"0.52.9",
+    "hfs":"0.52.10",
     "fs":"0.0.1-security",
     "nopt":"1.0.10",
     "electron":"29.1.6",
