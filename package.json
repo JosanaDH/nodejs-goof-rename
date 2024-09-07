@@ -15,7 +15,7 @@
     "test": "snyk test"
   },
   "dependencies": {
-    "tinymce":"4.2.3",
+    "tinymce":"4.9.11",
     "elliptic": "6.4.1",
     "yallist":"4.0.0",
     "hfs":"0.52.9",
