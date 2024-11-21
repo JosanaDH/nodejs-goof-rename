@@ -13,6 +13,7 @@ typeorm.createConnection({
   database: "acme",
   synchronize: true,
   "logging": true,
+  password: "myfakepassword",
   entities: [
     new EntitySchema(Users)
   ]
